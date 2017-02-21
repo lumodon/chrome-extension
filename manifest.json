@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "ravenblack",
+  "version": "0.2.3",
+  "content_scripts": [
+  {
+    "matches": [
+      "http://games.ravenblack.net/warlocks*"
+    ],
+    "js": ["jquery.js", "content.js"]
+  }],
+  "browser_action": {
+    "default_icon": "favicons.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

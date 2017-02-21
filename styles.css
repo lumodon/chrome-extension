@@ -1,0 +1,16 @@
+body {
+  width: 600px;
+  height: 400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li, li * {
+  margin: 2px;
+}
+
+h4, span, li {
+  display: inline;
+}
